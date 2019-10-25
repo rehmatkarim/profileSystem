@@ -17,7 +17,7 @@ export class LoginService {
   validateUser(name: string, pass: string): Observable<Object> {
     console.log('[NOTE] LoginService::validateUser(name, pass) recieved name: ' + name + ' pass: ' + pass);
     // /api/validateUser?name=mubeen&pass=fast123
-    const url = 'http://localhost:8000/api/validateUser?name=' + name + '&pass=' + pass;
+    const url = 'http://localhost:5000/api/validateUser?email=' + name + '&password=' + pass;
     //var url = 'http://localhost:8000/';
     console.log('requesting', url);
     // if (this.http.get(url)) {
