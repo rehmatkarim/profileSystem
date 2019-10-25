@@ -1,20 +1,23 @@
 <section class="login-panel">
-        <div class="container h-100 border ">
+    <div class="container">
             <div class="row ">
-                <div class="col-md-4 mx-auto">
-                    <h1 class="main-heading">Profile System</h1>
+                    <div class="col-md-4 mx-auto">
+                        <h1 class="main-heading">Profile System</h1>
+                    </div>
+        
                 </div>
-    
-            </div>
-            <div class="row login-form align-items-center justify-content-center border ">
-                <div class="col-md-6 mx-auto">
-                        <form>
+             </div>
+        <div class="container log-fo h-100   align-items-center">
+          
+            <!-- <div  class="row login-form  "> -->
+                <!-- <div class="col-md-6 mx-auto"> -->
+                        <form [formGroup]="loginForm" (ngSubmit)="onSubmit()"  >
                                 <!-- Grid row -->
                                 <div class="form-group row">
                                   <!-- Default input -->
-                                  <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                                  <label for="inputEmail3" class="col-sm-4 col-form-label">Email</label>
                                   <div class="col-sm-10">
-                                    <input mdbInput type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                                    <input mdbInput type="email" formControlName="userName" class="form-control" id="inputEmail3" placeholder="Email">
                                   </div>
                                 </div>
                                 <!-- Grid row -->
@@ -22,23 +25,23 @@
                                 <!-- Grid row -->
                                 <div class="form-group row">
                                   <!-- Default input -->
-                                  <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+                                  <label for="inputPassword3" class="col-sm-4 col-form-label">Password</label>
                                   <div class="col-sm-10">
-                                    <input mdbInput type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                                    <input mdbInput type="password" formControlName="userPass" class="form-control" id="inputPassword3" placeholder="Password">
                                   </div>
                                 </div>
                                 <!-- Grid row -->
                               
                                 <!-- Grid row -->
-                                <div class="form-group row border">
+                                <div class="form-group row ">
                                   <div class="col-sm-4   mx-auto ">
-                                    <button type="submit" mdbBtn color="primary">Sign in</button>
+                                    <button type="submit" (click)="onSubmit()" mdbBtn color="primary">Sign in</button>
                                   </div>
                                 </div>
                                 <!-- Grid row -->
                               </form>
-                </div>
-            </div>
+                <!-- </div> -->
+            <!-- </div> -->
         </div>
     
     </section>

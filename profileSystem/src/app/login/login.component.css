@@ -1,0 +1,11 @@
+.log-fo{
+    display:table;
+    height: 100vh !important;
+    margin: 0 auto;
+}
+.login-form {
+    display: table-cell;
+
+    vertical-align: middle;
+}
+
