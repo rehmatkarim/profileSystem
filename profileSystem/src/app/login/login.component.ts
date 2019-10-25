@@ -43,6 +43,7 @@ export class LoginComponent implements OnInit {
     // const ls = new LoginService();
     const isValid = this.loginService.validateUser(userName, userPass);
     console.log('[NOTE] isValid = ' + isValid);
+    isValid.subscribe(x => console.log('x = ' + x));
     // tslint:disable-next-line: deprecation
   }
 

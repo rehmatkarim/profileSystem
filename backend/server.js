@@ -14,6 +14,7 @@ app.get('/', function(req, res) {
 // ADDING ROUTE FOR API INTERFACE
 app.get('/api/validateUser', function(req, res){
   console.log("A request is made to server");
+  console.log(req.body);
   return 'Sucess';
 
 })
