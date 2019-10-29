@@ -42,6 +42,19 @@ def validateUser():
 
 	#return "yay"
 
+@app.route('/signUp', methods=['GET', 'POST'])
+def signUp():
+	## /signup?name=Ali&email=rehmat@rkb.com&password=fast123
+
+	"""
+	{
+		'name': 'Ali',
+		
+	}
+	"""
+
+
+
 
 
 if __name__ == '__main__':
